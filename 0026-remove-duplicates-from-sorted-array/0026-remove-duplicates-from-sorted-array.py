@@ -6,7 +6,7 @@ class Solution(object):
         """
         k = 1
         for current in range(1, len(nums)):
-            if nums[current - 1] != nums[current]:
+            if nums[k - 1] != nums[current]:
                 nums[k] = nums[current]
                 k += 1
 
